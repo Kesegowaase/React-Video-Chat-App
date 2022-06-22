@@ -4,7 +4,8 @@ import Peer from 'simple-peer';
 
 const SocketContext = createContext();
 
- const socket = io('https://video-chat-app-tosun.herokuapp.com/');
+//const socket = io('https://video-chat-app-tosun.herokuapp.com/');
+const socket = io('http://localhost:5000');
 
 const ContextProvider = ({ children }) => {
     const [callAccepted, setCallAccepted] = useState(false);
